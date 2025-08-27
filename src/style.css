@@ -589,16 +589,27 @@ body {
     margin: 10px !important;
   }
 }
+.tech-icons {
+  font-size: 2.8rem; /* icon size */
+  margin: 20px;
+  color: #ffffff;
+  background: #0a0a0a; /* dark background */
+  border-radius: 50%; /* make it a circle */
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  transform: scale(1.15);
+  color: #ffffff; /* keep icon white for contrast */
+  box-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7, 
+              0 0 45px #a855f7, 0 0 60px #a855f7;
 }
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
-}
+
 
 .quote-card-view {
   border: none !important;

@@ -18,39 +18,33 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Python, Javascript and C. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Cyber Security and Machine Learning.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
+            <div className="home-about-body">
+              <ul style={{ paddingLeft: "20px", lineHeight: "1.8em" }}>
+                <li>
+                  I’m <b className="purple">Varun J</b>, a Computer Science
+                  Engineering student specializing in{" "}
+                  <b className="purple">Cyber Security</b>.
+                </li>
+                <li>
+                  I love building impactful{" "}
+                  <b className="purple">web apps</b> and exploring{" "}
+                  <b className="purple">problem-solving challenges</b> in
+                  hackathons.
+                </li>
+                <li>
+                  I’m skilled in{" "}
+                  <b className="purple">
+                    Java, Python, SQL, and React-Spring Boot
+                  </b>{" "}
+                  with experience in{" "}
+                  <b className="purple">REST APIs, Databases, and Git/GitHub</b>.
+                </li>
+                <li>
+                  A <b className="purple">quick learner, problem solver, and team player</b>{" "}
+                  who’s always eager to grow and create meaningful solutions.
+                </li>
+              </ul>
+            </div>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
