@@ -106,6 +106,8 @@ body {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  width: 100% !important;
+  z-index: 1000 !important;
 }
 
 .navbar-toggler {
@@ -134,7 +136,6 @@ body {
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
   transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
@@ -161,21 +162,28 @@ body {
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
+    padding: 0.5rem 1rem !important; /* reduced navbar height */
+    font-size: 1.2rem !important;
     background-color: #181a27 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
 
 .logo {
-  height: 10em !important;
+  height: 4em !important; /* reduced from 10em */
   width: auto !important;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    height: 3em !important; /* smaller logo in mobile */
+  }
 }
 
 .navbar-nav .nav-link {
@@ -222,6 +230,17 @@ body {
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
+}
+
+/* ✅ Fix: Push content below fixed navbar */
+body {
+  padding-top: 80px; /* adjust for desktop navbar height */
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 100px; /* extra space for mobile navbar */
+  }
 }
 
 /* --------- */
