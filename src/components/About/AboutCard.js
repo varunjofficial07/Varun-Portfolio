@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Varun J </span>
             from <span className="purple"> Chennai, India.</span>
             <br />
-            I am currently Pre Final Year Student at Sri Venkateswaraa College of Technology
+            I am currently Final Year Student at Sri Venkateswaraa College of Technology
             <br />
             I have Enrolled my self in the Stream of B.E Computer Science With Specialization In Cyber Security
             <br />
